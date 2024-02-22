@@ -1,0 +1,133 @@
+body{
+	background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(loginimg2.jpeg);
+    background-size:cover;
+	background-position:center;
+}
+
+.header
+{
+    position:relative;
+}
+
+nav
+{ 
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav img
+{
+    float:left;
+    width:240px;
+    height:80px;
+}
+
+.nav-links
+{
+    flex:1;
+    text-align:right;
+}
+
+.nav-links ul li
+{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+
+.nav-links ul li a
+{
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.nav-links ul li::after
+{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#fff;
+    display:block;
+    margin:auto;
+    transition:0.5s ease;
+}
+
+.nav-links ul li:hover::after
+{
+    width:100%;
+}
+
+h2{
+	width:97.4%;
+	margin:50px auto 0px;
+	color:whitesmoke;
+	text-align:center;
+	border-bottom:none;
+	padding:4px;
+}
+
+form,.content{
+	width:25%;
+	margin:0px auto;
+	padding:20px;
+	background-color:transparent;
+}
+
+.input-group{
+	background:rgba(211,211,211,0.5);
+	padding:10px;
+}
+
+.input-group label{
+	display:block;
+	text-align:left;
+	margin:3px;
+	color:white;
+}
+
+.input-group input,.input-group select
+{
+	height:25px;
+	width:75%;
+	padding:5px 10px;
+	font-size:12px;
+    border-radius:5px;
+	border:1px solid gray;
+	background:rgba(211,211,211,0.5);
+}
+
+.btn
+{
+	padding:10px;
+	font-size:15px;
+	color:white;
+    background:blue;
+	border:none;
+	border-radius:5px;
+}
+
+.error-msg
+{
+	margin:0 0;
+	font-size:20px;
+	font-weight:bold;
+	background:rgba(243, 186, 186, 0.5);
+	color:rgba(241, 238, 21, 0.836);
+	text-align: center;
+	padding:1px;
+}
+
+.success
+{
+	margin:0 0;
+	color:#3c763d;
+	background:rgba(200, 236, 169, 0.5);
+	text-align: center;
+	padding:1px;
+	font-size:20px;
+	font-weight:bold;
+}

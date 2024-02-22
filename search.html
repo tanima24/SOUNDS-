@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function disp(s)
+{
+var obj;
+if(s.length==0)
+{
+document.getElementById('list').innerHTML="";
+return;
+}
+if(window.XMLHttpRequest)
+{
+obj=new XMLHttpRequest();
+}
+else
+{
+obj=new ActiveXObject("Microsoft.XMLHTTP");
+}
+obj.onreadystatechange=function()
+{
+if (obj.readyState==4 && obj.status==200)
+{
+document.getElementById('list').innerHTML=obj.responseText;
+}
+}
+obj.open("GET","search.php?t1="+s,true);
+obj.send();
+}
+</script></head>
+<body>
+<center>
+<input type="text" id=s onkeyup=disp(this.value)>
+<div id='list'>Results</div>
+</center></body></html>

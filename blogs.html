@@ -1,0 +1,122 @@
+<html>
+    <head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="homepage.css">
+</head>
+    <body>
+        <section class="blog-header">
+            <nav>
+                <a href="hp1.html"><img src="logo1.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="http://localhost/project/hp1.html">Home</a></li>
+                        <li><a href="http://localhost/project/blogs.html">Blogs</a></li>
+                        <li><a href="http://localhost/project/about.html">About us</a></li>
+                        <li><a href="http://localhost/project/contact.html">Contact us</a></li>
+                        <li><a href="http://localhost/project/signin.php">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Our Blogs</h1>
+</section>
+<div class="testimonials">
+    <div class="bg">
+        <div class="indicator">
+            <span class="button active"></span>
+            <span class="button"></span>
+            <span class="button"></span>
+            <span class="button"></span>
+        </div>
+        <div class="bg-test">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+             <div class="user-text">
+              <h3>BTS</h3>
+              <p>BTS is a kpop boy band from BigHit Entertainment. BTS means Bulletproof Boyscoucts in korean but they have recently changed their english 
+                name to Beyond the Scene. BTS includes seven members and debuted on June 12th, 2013. Their fandom name is Army. They have attended the 
+                Billboard awards in America and won the Top Social Artist Awards.</p>
+             </div>
+             <div class="user-img">
+              <img src="blog1.jpg">
+             </div>
+            </div>
+            <div class="slide-col">
+             <div class="user-text">
+                <h3>Neha Kakkar</h3>
+                <p>Neha Kakkar is one of Bollywood's most well-known singers. She began her career in 2006.
+                    She began her career with Meet Bros, releasing her first album, 'Neha The RockStar' in 2008 and immediately rose to prominence in the 
+                    Bollywood music business.She has performed in almost 1000 live concerts and When it comes to her singing concerts, the figures are staggering. 
+                </p>
+             </div>
+             <div class="user-img">
+              <img src="blog2.jpg">
+             </div>
+            </div>
+            <div class="slide-col">
+             <div class="user-text">
+                <h3>Ari Staprans Leff </h3>
+              <p>Ari Staprans Leff professionally known as Lauv, is an American singer, songwriter and record producer based in Los Angeles.
+                 His debut EP Lost in the Light was released in 2015 and his compilation album I Met You When I Was 18 (The Playlist) was released in 2018.
+                 He has written songs for other artists including the singles "No Promises" by Cheat Codes and Demi Lovato and more.</p>
+             </div>
+             <div class="user-img">
+              <img src="blog3.jpg">
+             </div>
+            </div>
+            <div class="slide-col">
+             <div class="user-text">
+                <h3>Adele Laurie Blue Adkins</h3>
+                <p>Adele Laurie Blue Adkins is an English pop singer and songwriter whose soulful emotive voice and traditionally crafted 
+                    songs made her one of the most broadly popular performers of her generation.In 2013 Adele won the Grammy for best pop solo performance for 
+                    "Set Fire to the Rain" from her concert album Live at the Royal Albert Hall.</p>
+             </div>
+             <div class="user-img">
+              <img src="blog4.jpg">
+             </div>
+            </div>
+       </div>
+    </div>
+    </div>
+</div>
+    <script>
+        var btn=document.getElementsByClassName("button");
+        var sli=document.getElementById("slide");
+        btn[0].onclick=function()
+        {
+            sli.style.transform="translateX(0px)";
+            for(i=0;i<4;i++)
+            {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick=function()
+        {
+            sli.style.transform="translateX(-800px)";
+            for(i=0;i<4;i++)
+            {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick=function()
+        {
+            sli.style.transform="translateX(-1600px)";
+            for(i=0;i<4;i++)
+            {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[3].onclick=function()
+        {
+            sli.style.transform="translateX(-2400px)";
+            for(i=0;i<4;i++)
+            {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+            </script>
+    </body>
+</html>

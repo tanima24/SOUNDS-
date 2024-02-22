@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity=
+     "sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
+<link rel="stylesheet" href="homepage.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="hp1.html"><img src="logo1.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="http://localhost/project/hp1.html">Home</a></li>
+                        <li><a href="http://localhost/project/blogs.html">Blogs</a></li>
+                        <li><a href="http://localhost/project/about.html">About us</a></li>
+                        <li><a href="http://localhost/project/contact.html">Contact us</a></li>
+                        <li><a href="http://localhost/project/signin.php">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Contact us</h1>
+</section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.8672863172305!2d73.88432661484299!3d18.534898487400664!
+       2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0ffa9356657%3A0xa8a998fd05b52d95!2sSt.%20Mira&#39;s%20College%20For%20Girls!
+       5e0!3m2!1sen!2sin!4v1644323348953!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-building"></i>
+                <span>
+                    <h5>SOUND'S HQ</h5>
+                    <p>St.Mira's College for Girls,<br>Koregaon Park,<br>Pune-411014,<br>India.</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>Monday to Friday,11:00am-3:00pm</h5>
+                    <p>+91 7634256749</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>Email us</h5>
+                    <p>tanimamandal16@gmail.com</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your Email id" required>
+                <textarea rows="6" id="message" placeholder="How can we help you?" required></textarea>
+                <button type="submit" class="btn btn-btn">Send message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail()
+    {
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "purposeproject96@gmail.com",
+        Password : "pro2022.03",
+        To : 'tanimamandal16@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New contact form enquiry",
+        Body : "Name:"+ document.getElementById("name").value
+              + "<br>Email:"+ document.getElementById("email").value
+              + "<br>Message:"+ document.getElementById("message").value
+        }).then(
+        message => alert("message sent successfully")
+        );
+    }
+
+</script>
+    </body>
+</html>
